@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
+/**
+ * This code is used to launch application
+ */
 public class kk {
 	public static void main(String args[]) {
 		//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
@@ -24,7 +26,7 @@ public class kk {
 		
 		 WebElement d = driver.findElement(By.id("searchDropdownBox"));
 		String s = d.getText();
-		System.out.println
+		System.out.println(s);
 		 Select sat=new Select(d);
 		 sat.selectByVisibleText("Books");
 		
