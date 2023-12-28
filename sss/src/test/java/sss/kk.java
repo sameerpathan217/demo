@@ -23,7 +23,8 @@ public class kk {
 		driver.manage().window().maximize();
 		
 		 WebElement d = driver.findElement(By.id("searchDropdownBox"));
-		 
+		String s = d.getText();
+		System.out.println
 		 Select sat=new Select(d);
 		 sat.selectByVisibleText("Books");
 		
